@@ -1,0 +1,50 @@
+.about {
+    text-align: center;
+}
+
+.about__title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    color: var(--dark-blue);
+}
+
+.about__text {
+    margin-bottom: 5em;
+}
+
+
+.about__card_wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+.about__card_title {
+    font-weight: 400;
+    color: var(--dark-blue);
+    margin-top: .8em;
+}
+
+
+/* medie queries */
+@media (min-width: 1024px) {
+    .about__title {
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .about__text {
+        text-align: left;
+        width: 49%;
+        margin-bottom: 4em;
+    }
+
+
+    .about__card_wrapper {
+        grid-template-columns: repeat(4, 1fr);
+        text-align: left;
+    }
+}
+
+@media (min-width: 1440px) {}

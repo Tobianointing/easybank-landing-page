@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+
+:root {
+  --dark-blue: hsl(233, 26%, 24%);
+  --lime-green: hsl(136, 65%, 51%);
+  --bright-cyan: hsl(192, 70%, 51%);
+  --grayish-blue: hsl(233, 8%, 62%);
+  --light-grayish-blue: hsl(220, 16%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --btn-bg: linear-gradient(100deg, var(--lime-green), var(--bright-cyan));
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  color: var(--grayish-blue);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  color: var(--dark-blue);
+  text-align: center;
+}
+
+
+/* common styles */
+.bg-very-light-gray {
+  background-color: var(--very-light-gray);
+}
+
+.bg-light-gray {
+  background-color: var(--light-grayish-blue);
+}
+
+section {
+  padding: 3em 1.5em;
+}
+
+.cta {
+  background: var(--btn-bg);
+  color: var(--white);
+  padding: .7em 1.7em;
+  border-radius: 5em;
+}
+
+
+/* medie queries */
+@media (min-width: 1024px) {
+
+  section {
+    padding: 6em 8em;
+  }
+
+  h1 {
+    text-align: left;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    font-size: 18px;
+  }
+}
